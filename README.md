@@ -13,7 +13,7 @@ Projeto desenvolvido para comunicação bi-direcional utilizando websockets.
 - Socket.io;
 - Padrão MVC.
 
-### Para visualizar o projeto em andamento:
+### Para visualizar o projeto em funcionamento:
 
 - Após clonar o diretório do projeto execute o comando `npm install` para que todas a dependências necessárias sejam instaladas;
 - Inicie o servidor com o comando `node app.js`  no diretório do projeto;
