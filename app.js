@@ -11,9 +11,9 @@ app.set('io', io)
 
 // criar conexão por websocket
 io.on('connection', socket => {
-  console.log('usuario conectou')
+  // console.log('usuario conectou')
   socket.on('disconnect', dados => {
-    console.log('usuario desconectou')
+    // console.log('usuario desconectou')
   })
   // dialogo
   socket.on('msgParaServidor', data => {

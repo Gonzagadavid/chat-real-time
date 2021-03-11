@@ -8,7 +8,6 @@ Projeto desenvolvido para comunicação bi-direcional utilizando websockets.
 - Express;
 - EJS;
 - Consign;
-- Body-parser;
 - Express-validator;
 - Socket.io;
 - Padrão MVC.

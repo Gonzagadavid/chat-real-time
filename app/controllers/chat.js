@@ -1,7 +1,6 @@
 module.exports.iniciaChat = (application, erros, req, res) => {
   const dadosForm = req.body
   if (!erros.isEmpty()) {
-    console.log(erros)
     res.render('index', { validacao: erros.errors })
     return
   }
