@@ -5,38 +5,12 @@
 
 		<title>Multiroom Chat</title>
 		
-		<!-- JQUERY -->
-		<script src="js/jquery-2.2.1.js"></script>
-		
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	
 		<!-- estilo -->
 		<link href="css/style.css" rel="stylesheet">
 		
-		<script type="text/javascript">
-		
-			$(document).ready(function(){
-				$("#exibe_chat").click(function(){
-					$("#conversa").show();
-					$("#participantes").hide();
-					ocultaNavbar();
-				});
-				
-				$("#exibe_participantes").click(function(){
-					$("#participantes").show();
-					$("#conversa").hide();
-					ocultaNavbar();
-				});
-			});
-			
-			function ocultaNavbar(){
-				$("#btn_navbar_toggle").attr("class","navbar-toggle collapsed");
-				$("#navbar-collapse-1").attr("class","navbar-collapse collapse");
-				$("#btn_navbar_toggle").attr("aria-expanded","false");
-				$("#navbar-collapse-1").attr("aria-expanded","false");
-			}
-		</script>
 	</head>
 
 	<body>
@@ -107,7 +81,6 @@
 			</div>
 		</nav>		
 		
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 			const socket = io('http://localhost')
@@ -143,8 +116,7 @@
 			 	document.getElementById('pessoas').innerHTML += html
 		   })
 
-		
-
 		</script>
+		<script type="text/javascript" src="js/chat.js"></script>
 	</body>
 </html>
